@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+
+public class conditionalstatement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int score;
+		
+		System.out.print("성적을 입력하세요 : ");
+		Scanner input = new Scanner(System.in);
+		score = input.nextInt(); // 키보드에서 숫자 입력
+		
+		System.out.println("성적은 " + score + " 점 입니다." );
+		
+		//성적이 60점 이상이면 "합격입니다.", 60점 미만이면 "불합격입니다"를 출력
+		//비교 >= : 관계연산자
+		//if(조건식){참일 경우 수행} else{거짓일 경우 수행}
+		if(score >= 60) { 
+			System.out.println("합격입니다.");
+		//	good++;
+		} //복합문(compound Statement) : 여러 문장을 중괄호{}로 묶어 하나의 문장으로 처리
+		else { 
+			System.out.println("불합격입니다.");
+		//	bad++;
+		}
+		
+		if(score >= 80) { 
+			System.out.println("성적은 A입니다.");
+			
+		}               
+		else if(score >= 60){ 
+			System.out.println("성적은 B입니다.");
+			
+		}
+		else System.out.println("성적은 F입니다.");
+		
+		//0 ->"없음" , 1 -> "하나" , 3 -> "둘" , 0/1/2 가 아니면 "많음"을 출력
+		switch (score) {
+		case 0:
+			System.out.println("없음");
+			break;
+		case 1:
+			System.out.println("하나");
+			break;
+		case 2:
+			System.out.println("둘");
+			break;
+
+		default:
+			System.out.println("많음");			
+			break;
+		}
+		System.out.println("========== 프로그램 종료 ==============");
+
+	}
+
+}
