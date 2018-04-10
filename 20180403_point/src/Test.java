@@ -17,6 +17,7 @@ public class Test {
 		System.out.println(temp); //temp = 1.0  ('매개변수의 전달과 존재기간' 공부하기)
 		p.setY(temp);
 		
+		//p = p.move(p);
 		System.out.println(p.getX()); 
 		
 		System.out.println(p.distance()); //p 객체의 distance() 출력

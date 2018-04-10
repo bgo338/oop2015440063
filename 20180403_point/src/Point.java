@@ -33,15 +33,15 @@ public class Point {
 		
 	}
 
-	public Point move(Point p) {  //매개변수 p의 유효범위는 메소드 내부
+	public Point move(Point pp) {  //매개변수 p의 유효범위는 메소드 내부
 		
 		//temp변수 선언 (지역변수)
 		double a;
 		double b;
 		
 		//포인트 p만큼 이동
-		a = this.x + p.x; //필드x라는것을 강조 ->this.
-		b = this.y + p.y;
+		a = this.x + pp.x; //필드x라는것을 강조 ->this.
+		b = this.y + pp.y;
 		
 		//새로운 포인트 생성
 		Point pnt = new Point();
