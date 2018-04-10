@@ -18,8 +18,8 @@ public class TestPoint {
 		System.out.println(pnt1.toString());
 		System.out.println(pnt1); //toString()메소드를 찾아서 스트링으로 알아서 출력된다.
 		System.out.println(pnt2.distance());
-		System.out.println(pnt2.distance(pnt1));
-		
+		System.out.println(pnt2.distance(pnt1)); //같은 이름의 메소드라도 매개변수가 다르면 괜찮다.(overloading method)
+												 //메소드 호출시 매개 변수를 보고 일치하는 메소드가 호출된다. 
 		
 		
 	}

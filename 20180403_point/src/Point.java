@@ -6,7 +6,7 @@ public class Point {
 	public double x; //필드(클래스 안에서 선언되는 멤버 변수, 인스턴스 변수라고도 한다.) 필드의 scope(유효범위)은 클라스 내부이다.
 	public double y;
 	
-	public void setX(double xx) {  //설정자, 필드의 값을 설정하는 메소드
+	public void setX(double xx) {  //설정자, 필드의 값을 설정하는 메소드, 매개 변수를 통하여 잘못된 값이 넘어오는 경우 이를 사전에 차단할 수 있다.
 		this.x = xx;
 		xx = 100;
 	}

@@ -1,8 +1,9 @@
 
 public class Desklamp {
-	
+	//필드
 	private boolean isOn;
 	
+	//메소드
 	public void turnOn() {
 		isOn = true;
 	}
@@ -12,6 +13,9 @@ public class Desklamp {
 	}
 	
 	public String toString() {
-		return "현재 상태는 " + (isOn == true ? "켜짐" : "꺼짐");
+		if(isOn == true)
+			return "현재 상태는 " + "켜짐";
+		else 
+			return "현재 상태는 " + "꺼짐";
 	}
 }
