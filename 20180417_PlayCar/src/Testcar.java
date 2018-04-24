@@ -11,9 +11,10 @@ public class Testcar {
 		car yourCar = new car();
 		System.out.println(yourCar.numberOfCars);
 		System.out.println(car.numberOfCars); //'클라스명.정적변수명' 으로도 가능
-		car.Print();
+		
 		//myCar.setColor("Black");
 		//myCar.setSpeed(100);
+		System.out.println(myCar);
 		System.out.println(myCar);
 		
 		

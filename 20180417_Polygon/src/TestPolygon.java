@@ -1,5 +1,5 @@
 
-public class TestPolygon {
+public class TestPolygon { 
 
 	public static void main(String[] args) {
 		Triangle tri = new Triangle();

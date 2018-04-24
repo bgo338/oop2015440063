@@ -5,7 +5,9 @@ public class Dog extends Animal {
 		super(name);
 		// TODO Auto-generated constructor stub
 	}
-	public void sing() {
+	
+	@Override
+	public void sing() { //Overriding
 		System.out.println(this.name + " ¸Û¸Û");
 	}
 	
