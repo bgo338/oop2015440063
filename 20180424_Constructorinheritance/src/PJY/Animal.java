@@ -8,4 +8,5 @@ public class Animal {
 		//명시적 수퍼클라스의 생성자 호출 super();
 		System.out.println("Animal 정수형 생성자");
 	}
+	
 }

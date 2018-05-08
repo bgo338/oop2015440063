@@ -14,7 +14,7 @@ public class Test {
 		tina.protectedField = "Beatles";
 		tina.print();
 		
-		
+		 
 	}
 
 }
