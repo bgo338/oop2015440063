@@ -10,7 +10,7 @@ public class MyFrame extends JFrame implements ActionListener{
 	JTextField tf;
 	
 	MyFrame() {  //생성자
-		setSize(900,500);
+		setSize(500,600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //괄호안에 있는것 : static variable
 		setTitle("JY frame");
 		
