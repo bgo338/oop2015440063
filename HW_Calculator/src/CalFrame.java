@@ -30,14 +30,12 @@ public class CalFrame extends JFrame implements ActionListener{
 			p2.add(btn[i]); //버튼을 panel2에 추가
 			btn[i].addActionListener(this); //actionlistener에 추가
 		}
-		
 		p2.setLayout(new GridLayout(6,6,6,6));  //panel2 레이아웃
 		
 		this.add(p1, BorderLayout.NORTH); 
 		this.add(p2, BorderLayout.CENTER);
 		
 		setVisible(true);
-	
 	}
 	
 	@Override
@@ -58,20 +56,16 @@ public class CalFrame extends JFrame implements ActionListener{
 			init();	//초기화		 
 		}
 		else if(e.getActionCommand().equals("0")){
-			if(txt == "") { //정수가 아직 입력 안됐을 때는 입력을 하지 않는다.
-				txt = ""; 
-			}
+			if(txt == "") txt = "";  //정수가 아직 입력 안됐을 때는 입력을 하지 않는다.				
 			else txt += "0"; 
 		}
 		else {
-			if(end_flag == 1) {  //계산이 끝난후에 값을 입력했을때 초기화 해준다.
-				init();
-			}
+			if(end_flag == 1) init();  //계산이 끝난후에 값을 입력했을때 초기화 해준다.				
 			txt += e.getActionCommand(); //숫자버튼을 누르면 그 숫자 입력
 		}
 		t.setText(temp + txt); //temp:"temp_num1 + " txt:"temp_num2
 	}
-	
+
 	//////////초기화 함수////////////
 	public void init() {
 		txt = "";
